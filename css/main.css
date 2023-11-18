@@ -54,7 +54,8 @@ body {
     height: 25px;
 }
 
-/* ====================================== */
+/* ==== NAVIGATION BAR ==== */
+
 .navbar {
     background-color: #000; /* Black background for the navbar */
     color: #fff; /* White text color */
@@ -69,7 +70,7 @@ img{
     width: 100%;
 }
 
-/* -----layouts------------- */
+/* ==== LAYOUTS ==== */
 
 .flex-container {
     display: flex;
@@ -125,7 +126,6 @@ img{
     main {
         max-width: 800px;
         margin-inline:10%;
-        /* padding: 20px; */
         background-color: #fff;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
