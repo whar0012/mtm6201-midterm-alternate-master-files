@@ -1,0 +1,357 @@
+@keyframes buttonGrow {
+    0% {
+        transform: scale(1,1)
+    }
+    50% {
+      transform: scale(1.2,1.2)
+    }
+    100% {
+      transform: scale(1,1)
+    }
+}
+
+.green-button:hover {
+    animation-name: buttonGrow;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* White background for the homepage */
+    color: #333;
+    margin: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+/* ==== ELEMENT ==== */
+
+.logo-img{
+    height: 25px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.image-container > *{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    text-align: center;
+}
+.image-container p{
+    margin: 0;
+}
+
+
+.image-container img {
+    width: 100%; /* 25% width with 10px margin between images */
+    border-radius: 8px;
+    aspect-ratio: 1;
+    height: 25px;
+}
+
+/* ====================================== */
+.navbar {
+    background-color: #000; /* Black background for the navbar */
+    color: #fff; /* White text color */
+    display: flex;
+    padding-inline: 15%;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+
+img{
+    width: 100%;
+}
+
+/* -----layouts------------- */
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8%;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8%;
+}
+
+.flex-container >*{
+    margin: auto;
+    margin-inline: 15%;
+    margin-bottom:20px ;
+}
+
+
+@media screen and (min-width:1080px) {
+    .navbar {
+        background-color: #000; /* Black background for the navbar */
+        color: #fff; /* White text color */
+        padding: 1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo img {
+        max-height: 40px; /* Adjust as needed */
+    }
+    
+    .nav-links {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .nav-links li {
+        margin-right: 10px;
+    }
+    
+    .nav-links a {
+        text-decoration: none;
+        color: #fff; /* White text color */
+    }
+    
+    main {
+        max-width: 800px;
+        margin-inline:10%;
+        /* padding: 20px; */
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow-y: auto; /* Add vertical scrollbar if content overflows */
+    }
+    
+    .hero-section {
+        display: flex; /* Use flexbox to align items */
+        flex-direction: column; /* Stack items vertically */
+    }
+    
+    .flex-container {   
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8%;
+    }
+
+    .flex-container2 {   
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8%;
+    }
+
+    .flex-container > *{
+        margin-inline: 0%;
+        margin-bottom:0px;
+    }
+    
+    .image-content {
+        max-width: 40%;
+    }
+    
+    .image-content img {
+        width: 100%; /* Take up full width of the container */
+        border-radius: 8px;
+    }
+
+    .image-content2 {
+        max-width: 40%;
+    }
+    
+    .image-content2 img {
+        width: 100%; /* Take up full width of the container */
+        border-radius: 8px;
+    }
+    
+    .text-content {
+        flex: 1; /* Take up remaining space */
+        box-sizing: border-box; /* Include padding in total width */
+    }
+    
+    .text-content h1 {
+        font-size: 36px;
+        color: #000;
+    }
+    
+    .text-content p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+
+    .text-content2 {
+        flex: 1; /* Take up remaining space */
+        box-sizing: border-box; /* Include padding in total width */
+    }
+    
+    .text-content2 h1 {
+        font-size: 36px;
+        color: #000;
+    }
+    
+    .text-content2 p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .title-picture {
+        max-width: 40%; /* Adjust as needed */
+    }
+    
+    .title-picture img {
+        width: 100%; /* Take up full width of the container */
+        border-radius: 8px;
+    }
+    
+    .image-container {
+        display: flex;
+        flex-wrap: wrap; /* Allow images to wrap to the next line if needed */
+    }
+    
+    .image-container img {
+        width: 100%; /* Take up full width of the container */
+        border-radius: 8px;
+        margin-bottom: 10px; /* Add some space between images */
+    }
+    
+    footer {
+        background-color: #3C3B3A;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+    }
+    
+    .button-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .green-button {
+        background-color: #4CAF50; /* Green background color */
+        color: #fff; /* White text color */
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .discover-section {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow-y: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .discover-section .image-content img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    
+    .discover-section .text-content {
+        flex: 1;
+        padding-left: 20px;
+        box-sizing: border-box;
+    }
+
+/* ==== GREY BACKGROUND ==== */
+
+    .grey-background {
+        background-color: #3C3B3A; /* or any other desired background color */
+        color: white;
+        overflow: hidden; /* Clearing float to contain child elements */
+        border: 1px solid black; /* Add a 2px solid white border to the image */
+    }
+
+    .banner-content {
+        width: 100%; /* Ensure the banner-content takes the full width of its parent */
+    }
+
+    .banner-content img {
+        float: left; /* Float the image to the left */
+        width: 100px; /* Set the width of the image as per your requirement */
+        height: auto; /* Maintain aspect ratio */
+        margin: 10px 20px 10px 0; /* Add margin to all sides of the image */
+        border-radius: 50%; /* Make the image round by setting border-radius to 50% */
+        border: 3px solid white; /* Add a 2px solid white border to the image */
+    }
+
+    .banner-content h3 {
+        margin: 10px 20px 10px 0; /* Add margin to all sides of the h3 */
+        float: left; /* Float the h3 to the left */
+    }
+
+    .banner-content p {
+        margin: 10px 0; /* Add margin above and below the paragraph */
+    }
+
+
+
+}
+
+
+
+
+
+ /* ===== HTML ===== */
+
+/* <main class="container">
+ <button id="ninja" class="ninja"><img src="https://imdac.github.io/images/codepen/ninja.svg"></button>
+      
+  <div id="controls" class="controls">
+    <button id="spin" class="btn">Spin</button>
+    <button id="flip" class="btn">Flip</button>
+    <button id="grow" class="green-button">Grow</button>
+    <button id="shrink" class="btn">Shrink</button>
+    <button id="special" class="btn">Special</button>
+  </div>
+</main> */
+
+
+/* ===== KEYFRAMES ===== */
+
+/* @keyframes ninjaSpin{
+    0% {
+      transform: scale(1,1)
+    }
+    50% {
+      transform: scale(-1.2,1.2)
+    }
+    100% {
+      transform: scale(1,1)
+    }
+}
+  
+  @keyframes ninjaFlip{
+    0% {
+      transform: rotate(360deg);
+    }
+}
+  
+  @keyframes ninjaGrow{
+    0% {
+        transform: scale(1,1)
+    }
+    50% {
+        transform: scale(2,2)
+    }
+} */
